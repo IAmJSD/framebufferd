@@ -1,0 +1,21 @@
+[package]
+name = "capturer"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+nix = { version = "0.29", features = ["ioctl", "mman", "fs"] }
+thiserror = "2"
+rayon = { version = "1.10", optional = true }
+serde = "1.0.228"
+
+[features]
+default = ["parallel"]
+parallel = ["rayon"]
+
+[dev-dependencies]
+image = "0.25"
+
+[[example]]
+name = "capture"
+path = "examples/capture.rs"

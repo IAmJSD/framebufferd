@@ -37,7 +37,7 @@ const DRM_IOCTL_WAIT_VBLANK: c_ulong = drm_iowr!(0x3a, 24); // union drm_wait_vb
 const DRM_IOCTL_MODE_GETRESOURCES: c_ulong = drm_iowr!(0xA0, 64);
 const DRM_IOCTL_MODE_GETCRTC: c_ulong = drm_iowr!(0xA1, 64);
 const DRM_IOCTL_MODE_GETFB: c_ulong = drm_iowr!(0xAD, 24);
-const DRM_IOCTL_MODE_GETFB2: c_ulong = drm_iowr!(0xCE, 128);
+const DRM_IOCTL_MODE_GETFB2: c_ulong = drm_iowr!(0xCE, 104);
 const DRM_IOCTL_MODE_MAP_DUMB: c_ulong = drm_iowr!(0xB3, 16);
 const DRM_IOCTL_PRIME_HANDLE_TO_FD: c_ulong = drm_iowr!(0x2d, 12);
 
